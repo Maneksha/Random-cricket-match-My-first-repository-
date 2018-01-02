@@ -103,6 +103,26 @@ class Bowl
     
 }
 
+class Toss
+{
+    void toss(String team1,String team2)
+    {
+       
+        System.out.println("TOSS between"+" "+team1+" "+"and"+" "+team2);
+        
+        long toss_no= Math.round( Math.random() )  ;
+        
+        
+        if(toss_no == 1)
+             System.out.println(team1+" "+"won the toss and choose to bat");
+        else
+             System.out.println(team2+" "+"won the toss and choose to bat");
+
+        
+
+    }
+}
+
 
 public class RandomCricketMatch {
 
@@ -137,7 +157,12 @@ public class RandomCricketMatch {
         
         bat.PakistanPlayers();
         bowl.PakistanPlayers();
-
+        
+        
+         Toss tossing=new Toss();
+        tossing.toss(team1,team2);
+       
+        
         
         
         
